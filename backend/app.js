@@ -34,7 +34,7 @@ const Gallery = mongoose.model("Gallery", gallerySchema);
 // Open AI configuration
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.OPENAI_API_KEY,
 });
 // configure Cloudinary
 
